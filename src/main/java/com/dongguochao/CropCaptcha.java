@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Random;
 
-public class MyCaptcha {
+public class CropCaptcha {
     public static final int size = 300;
     public static final int count = 2;
     public static final int blockSize = size/count;
@@ -68,7 +68,7 @@ public class MyCaptcha {
         int x = new Random().nextInt(sourceImg.getWidth() - i);
         int y = new Random().nextInt(sourceImg.getHeight() - i);
 
-        MyCaptcha pc = new MyCaptcha();
+        CropCaptcha pc = new CropCaptcha();
         pc.generateWhite();
         // 从原图中，生成一个正方形的徒刑，并且尺寸设置为size
         pc.cut(x, y, i, i, sourceImgPath, squareImgPath, true);
