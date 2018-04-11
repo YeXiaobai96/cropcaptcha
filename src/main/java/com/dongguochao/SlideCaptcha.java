@@ -1,19 +1,15 @@
 package com.dongguochao;
 
-import org.apache.sanselan.ImageInfo;
-import org.apache.sanselan.ImageReadException;
-import org.apache.sanselan.Sanselan;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Random;
 
 /**
  * 滑块验证码
+ * // todo 现在是正方形，需要做成异形的块
  */
 public class SlideCaptcha {
 
